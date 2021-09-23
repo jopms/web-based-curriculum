@@ -1,0 +1,30 @@
+@import "variables.scss";
+@import "theming.scss";
+
+@import "_home.scss";
+
+@mixin defaultTheme() {
+  .default {
+    @content;
+  }
+}
+
+@mixin darkTheme() {
+  .dark {
+    @content;
+  }
+}
+
+@include defaultTheme() {
+  @include home("default");
+}
+
+@include darkTheme() {
+  @include home("dark");
+}
+
+body.default {
+}
+
+body.dark {
+}

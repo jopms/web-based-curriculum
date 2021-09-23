@@ -1,0 +1,8 @@
+@import 'theming.scss';
+
+@mixin home($theme) {
+  .home-text{
+    background-color: theme-color($theme, 'backgroundColor');
+    color: theme-color($theme, 'textColor');
+  }
+}
