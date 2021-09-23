@@ -2,6 +2,9 @@
 @import "theming.scss";
 
 @import "_home.scss";
+@import "_skills.scss";
+@import "_experience.scss";
+@import "_education.scss";
 
 @mixin defaultTheme() {
   .default {
@@ -17,10 +20,16 @@
 
 @include defaultTheme() {
   @include home("default");
+  @include skills("default");
+  @include experience("default");
+  @include education("default");
 }
 
 @include darkTheme() {
   @include home("dark");
+  @include skills("dark");
+  @include experience("dark");
+  @include education("dark");
 }
 
 body.default {
