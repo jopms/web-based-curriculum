@@ -1,0 +1,12 @@
+@import "theming.scss";
+
+@mixin profilePicture($theme) {
+  .profile-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 13px solid white;
+    box-shadow: 0px 5px 20px #4646462f;
+    margin-right: 40px;
+  }
+}

@@ -1,9 +1,15 @@
 @import "theming.scss";
 
 @mixin home($theme) {
-  .home-text {
+  .home-wrapper {
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: theme-color($theme, "backgroundColorHome");
     color: theme-color($theme, "textColor");
+  }
+  .home-text-description {
+    max-width: 500px;
   }
 }
