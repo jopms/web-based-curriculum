@@ -1,8 +1,9 @@
-@import 'theming.scss';
+@import "theming.scss";
 
 @mixin home($theme) {
-  .home-text{
-    background-color: theme-color($theme, 'backgroundColor');
-    color: theme-color($theme, 'textColor');
+  .home-text {
+    height: 100%;
+    background-image: theme-color($theme, "backgroundColorHome");
+    color: theme-color($theme, "textColor");
   }
 }

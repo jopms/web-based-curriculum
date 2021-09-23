@@ -5,6 +5,8 @@
 @import "_skills.scss";
 @import "_experience.scss";
 @import "_education.scss";
+@import "_header.scss";
+@import "_footer.scss";
 
 @mixin defaultTheme() {
   .default {
@@ -23,6 +25,8 @@
   @include skills("default");
   @include experience("default");
   @include education("default");
+  @include header("default");
+  @include footer("default");
 }
 
 @include darkTheme() {
@@ -30,6 +34,8 @@
   @include skills("dark");
   @include experience("dark");
   @include education("dark");
+  @include header("dark");
+  @include footer("dark");
 }
 
 body.default {

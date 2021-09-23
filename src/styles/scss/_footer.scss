@@ -1,0 +1,18 @@
+@import "theming.scss";
+
+@mixin footer($theme) {
+  .footer-wrapper {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    background-color: theme-color($theme, 'backgroundColorFooter');
+  }
+  .footer-link {
+    text-decoration: none;
+    padding: 0px 50px;
+  }
+}

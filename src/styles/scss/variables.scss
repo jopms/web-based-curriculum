@@ -2,9 +2,15 @@ $theme-colors: (
   "default": (
     "textColor": #4c4b4b,
     "backgroundColor": #fff,
+    "backgroundColorHome": radial-gradient(#fff,#d6d6d6),
+    "backgroundColorFooter": #fff,
+    "backgroundColorHeader": #fff,
   ),
   "dark": (
     "textColor": #b2b2b2,
     "backgroundColor": #000,
+    "backgroundColorHome": #000,
+    "backgroundColorFooter": #1f1f1f,
+    "backgroundColorHeader": #1f1f1f,
   ),
 );
