@@ -1,0 +1,8 @@
+@import "theming.scss";
+
+@mixin mainContent($theme) {
+  .main-content {
+    height: 100%;
+    background-image: theme-color($theme, "backgroundColorHome");
+  }
+}

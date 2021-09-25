@@ -6,7 +6,7 @@ import profilePicture from "../styles/img/profile.png";
 
 const Home = () => {
   return (
-    <div className="home-wrapper">
+    <div id="home" className="home-wrapper">
       <ProfilePicture image={profilePicture} alt={"profile picture"} />
       <div className="home-text-description">
         <h1>João Santos</h1>

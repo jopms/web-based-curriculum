@@ -1,5 +1,12 @@
-@import 'theming.scss';
+@import "theming.scss";
 
 @mixin skills($theme) {
-  
+  .skills-wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: theme-color($theme, "textColor");
+  }
 }

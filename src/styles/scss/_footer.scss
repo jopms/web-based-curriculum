@@ -3,13 +3,24 @@
 @mixin footer($theme) {
   .footer-wrapper {
     width: 100%;
-    height: 200px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
     bottom: 0;
-    background-color: theme-color($theme, "backgroundColorFooter");
+    background-color: transparent;
+    z-index: 1;
+  }
+  .footer-link-wrapper {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px 0px;
+    border-radius: 50px;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.4);
+    }
+    transition: background-color 0.5s linear;
   }
 
   .footer-link {
@@ -20,16 +31,19 @@
     width: 32px;
     height: 32px;
     fill: theme-color($theme, "gihubFillColor");
+    transition: filter 0.2s linear;
     &:hover {
       cursor: pointer;
       -webkit-filter: drop-shadow(3px 3px 2px #4646462f);
       filter: drop-shadow(3px 3px 2px #4646462f);
     }
+    
   }
 
   .footer-linkedin-icon {
     width: 32px;
     height: 32px;
+    transition: filter 0.2s linear;
     &:hover {
       cursor: pointer;
       -webkit-filter: drop-shadow(3px 3px 2px #4646462f);
@@ -41,6 +55,7 @@
     width: 32px;
     height: 32px;
     fill: theme-color($theme, "emailFillColor");
+    transition: filter 0.2s linear;
     &:hover {
       cursor: pointer;
       -webkit-filter: drop-shadow(3px 3px 2px #4646462f);

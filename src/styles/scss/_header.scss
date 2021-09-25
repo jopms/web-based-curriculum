@@ -9,8 +9,13 @@
     align-items: center;
     position: fixed;
     top: 0;
-    background-color: theme-color($theme, "backgroundColorHeader");
-    box-shadow: 0px 5px 20px #c4c4c433;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 5px 20px #9b9b9b17;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.4);
+    }
+    transition: background-color 0.5s linear;
+    z-index: 1;
   }
 
   .nav-link {
@@ -22,6 +27,7 @@
       color: theme-color($theme, "navLinkTextSelected");
       text-shadow: 1px 0 0 theme-color($theme, "navLinkTextSelected");
     }
+    transition: color, text-shadow 0.2s linear;
   }
 
   .nav-selected {

@@ -1,6 +1,7 @@
 @import "variables.scss";
 @import "theming.scss";
 
+@import "styles.scss";
 @import "_home.scss";
 @import "_skills.scss";
 @import "_experience.scss";
@@ -8,6 +9,7 @@
 @import "_header.scss";
 @import "_footer.scss";
 @import "_profilePicture.scss";
+
 
 @mixin defaultTheme() {
   .default {
@@ -22,6 +24,7 @@
 }
 
 @include defaultTheme() {
+  @include mainContent("default");
   @include home("default");
   @include skills("default");
   @include experience("default");
@@ -32,6 +35,7 @@
 }
 
 @include darkTheme() {
+  @include mainContent("dark");
   @include home("dark");
   @include skills("dark");
   @include experience("dark");
