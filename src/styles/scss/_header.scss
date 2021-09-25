@@ -12,8 +12,20 @@
     background-color: theme-color($theme, "backgroundColorHeader");
     box-shadow: 0px 5px 20px #c4c4c433;
   }
+
   .nav-link {
     text-decoration: none;
     padding: 0px 50px;
+    color: theme-color($theme, "navLinkText");
+    font-size: 20px;
+    &:hover {
+      color: theme-color($theme, "navLinkTextSelected");
+      text-shadow: 1px 0 0 theme-color($theme, "navLinkTextSelected");
+    }
+  }
+
+  .nav-selected {
+    color: theme-color($theme, "navLinkTextSelected");
+    text-shadow: 1px 0 0 theme-color($theme, "navLinkTextSelected");
   }
 }

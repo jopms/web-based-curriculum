@@ -2,9 +2,14 @@ $theme-colors: (
   "default": (
     "textColor": #4c4b4b,
     "backgroundColor": #fff,
-    "backgroundColorHome": radial-gradient(#fff,#f1f1f1),
+    "backgroundColorHome": radial-gradient(#fff, #f1f1f1),
     "backgroundColorFooter": #fff,
     "backgroundColorHeader": #fff,
+    "navLinkText": #707070,
+    "navLinkTextSelected": #3f3f3f,
+    "gihubFillColor": black,
+    "emailFillColor": black,
+    
   ),
   "dark": (
     "textColor": #b2b2b2,
@@ -12,5 +17,9 @@ $theme-colors: (
     "backgroundColorHome": #000,
     "backgroundColorFooter": #1f1f1f,
     "backgroundColorHeader": #1f1f1f,
+    "navLinkText": #707070,
+    "navLinkTextSelected": #3f3f3f, 
+    "gihubFillColor": black,
+    "emailFillColor": black,
   ),
 );

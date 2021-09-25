@@ -9,10 +9,42 @@
     align-items: center;
     position: fixed;
     bottom: 0;
-    background-color: theme-color($theme, 'backgroundColorFooter');
+    background-color: theme-color($theme, "backgroundColorFooter");
   }
+
   .footer-link {
-    text-decoration: none;
     padding: 0px 50px;
+  }
+
+  .footer-github-icon {
+    width: 32px;
+    height: 32px;
+    fill: theme-color($theme, "gihubFillColor");
+    &:hover {
+      cursor: pointer;
+      -webkit-filter: drop-shadow(3px 3px 2px #4646462f);
+      filter: drop-shadow(3px 3px 2px #4646462f);
+    }
+  }
+
+  .footer-linkedin-icon {
+    width: 32px;
+    height: 32px;
+    &:hover {
+      cursor: pointer;
+      -webkit-filter: drop-shadow(3px 3px 2px #4646462f);
+      filter: drop-shadow(3px 3px 2px #4646462f);
+    }
+  }
+
+  .footer-email-icon {
+    width: 32px;
+    height: 32px;
+    fill: theme-color($theme, "emailFillColor");
+    &:hover {
+      cursor: pointer;
+      -webkit-filter: drop-shadow(3px 3px 2px #4646462f);
+      filter: drop-shadow(3px 3px 2px #4646462f);
+    }
   }
 }
