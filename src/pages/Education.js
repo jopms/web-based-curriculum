@@ -20,14 +20,10 @@ const Education = () => {
           <div className="education-text-description">
             <h1 className="education-title">Instituto Politécnico de Leiria</h1>
             <h3 className="education-subtitle">Automotive Engineering</h3>
-            <p>
-              • Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur
-            </p>
+            <p>• Programming in C Language</p>
+            <p>• Electronic design automation using Proteus Design Suite</p>
+            <p>• Digital Electronics study field</p>
+            <p>• Studying and testing electronic circuits using breadboards</p>
           </div>
         </div>
         <div className="education-field-wrapper">
@@ -39,14 +35,11 @@ const Education = () => {
           <div className="education-text-description">
             <h1 className="education-title">freeCodeCamp</h1>
             <h3 className="education-subtitle">Responsive Web Design</h3>
-            <p>
-              • Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur
-            </p>
+            <p>• HTML and HTML 5</p>
+            <p>• Responsive Web Design Principles</p>
+            <p>• CSS flexbox</p>
+            <p>• CSS Grid</p>
+            <p>• 5 Different projects in the end of the certification</p>
           </div>
         </div>
         <div className="education-field-wrapper">
@@ -58,14 +51,11 @@ const Education = () => {
           <div className="education-text-description">
             <h1 className="education-title">Udemy</h1>
             <h3 className="education-subtitle">Modern React and Redux</h3>
-            <p>
-              • Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur
-            </p>
+            <p>• React using Hooks and Classes</p>
+            <p>• API Requests / Axios</p>
+            <p>• Redux</p>
+            <p>• React Router</p>
+            <p>• 52.5 hours on-demand video with 17 coding exercices</p>
           </div>
         </div>
       </div>

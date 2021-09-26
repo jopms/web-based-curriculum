@@ -12,10 +12,14 @@ const Home = () => {
         <h1>João Santos</h1>
         <h3>Frontend developer</h3>
         <p>
-          Fast-learner and hardworking team player who is comfortable working
+          • Fast-learner and hardworking team player who is comfortable working
           with JavaScript and React to deliver exceptional customer experiences.
-          Passionate about exploring new technologies and selfimprovement.
-          Background in Automotive Engineering and aspiring to combine broad
+        </p>
+        <p>
+          • Passionate about exploring new technologies and selfimprovement.
+        </p>
+        <p>
+          • Background in Automotive Engineering and aspiring to combine broad
           background and discipline to become a Full-Stack developer.
         </p>
       </div>
