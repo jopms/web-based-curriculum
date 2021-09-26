@@ -1,12 +1,27 @@
 @import "theming.scss";
 
 @mixin skills($theme) {
-  .skills-wrapper {
-    height: 100%;
+  .skills-header-text{
+    text-align: center;
+    font-family: "Press Start 2P", cursive;
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.9);
+    font-size: 32px;
+    padding-bottom: 0px;
+    padding-top: 50px;
+    color: #99d98c;
+  }
+  .skills-page-wrapper {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 100%;
+    margin-top: 100px;
+    height: calc(100% - 200px);
+    flex-direction: column;
+  }
 
+  .skills-wrapper {
+    display: grid;
+    height: 100%;
+    grid-template-columns: auto auto auto auto auto;
     color: theme-color($theme, "textColor");
   }
 }

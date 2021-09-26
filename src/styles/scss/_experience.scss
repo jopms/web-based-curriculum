@@ -1,11 +1,19 @@
-@import 'theming.scss';
+@import "theming.scss";
 
 @mixin experience($theme) {
-    .experience-wrapper {
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: theme-color($theme, "textColor");
-      }
+  .experience-wrapper {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: theme-color($theme, "textColor");
+  }
+
+  .experience {
+    display: flex;
+    height: 100%;
+    padding-top: 50px;
+  }
 }

@@ -1,12 +1,30 @@
-@import 'theming.scss';
+@import "theming.scss";
 
 @mixin education($theme) {
-    .education-wrapper {
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-        color: theme-color($theme, "textColor");
-      }
+  .education-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: theme-color($theme, "textColor");
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .education {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+
+  .education-field-wrapper {
+    max-width: 20%;
+    padding-top: 90px
+  }
+  .education-title {
+    text-align: center;
+    font-size: 1.6em;
+  }
+  .education-subtitle {
+    text-align: center;
+  }
 }

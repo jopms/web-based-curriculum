@@ -1,0 +1,12 @@
+@import "theming.scss";
+
+@mixin title($theme) {
+  .main-header-text {
+    font-family: "Press Start 2P", cursive;
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.9);
+    font-size: 32px;
+    padding-top: 50px;
+    color: #99d98c;
+    text-align: center;
+  }
+}

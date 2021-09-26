@@ -8,8 +8,8 @@
 @import "_education.scss";
 @import "_header.scss";
 @import "_footer.scss";
-@import "_profilePicture.scss";
-
+@import "_roundImage.scss";
+@import "_title.scss";
 
 @mixin defaultTheme() {
   .default {
@@ -31,7 +31,8 @@
   @include education("default");
   @include header("default");
   @include footer("default");
-  @include profilePicture("default");
+  @include roundImage("default");
+  @include title("default");
 }
 
 @include darkTheme() {
@@ -42,7 +43,8 @@
   @include education("dark");
   @include header("dark");
   @include footer("dark");
-  @include profilePicture("dark");
+  @include roundImage("dark");
+  @include title("dark");
 }
 
 body.default {

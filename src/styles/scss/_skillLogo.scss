@@ -1,4 +1,26 @@
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .skill-logo {
-  height: 64px;
-  padding: 20px;
+  height: 75px;
+  transition: 4s;
+  -webkit-transition: 4s;
+  -moz-transition: 4s;
+  -ms-transition: 4s;
+  -o-transition: 4s;
+  &:hover {
+    transition: 4s;
+    -webkit-transition: 4s;
+    -moz-transition: 4s;
+    -ms-transition: 4s;
+    -o-transition: 4s;
+    -webkit-transform: rotate(1080deg);
+    -moz-transform: rotate(1080deg);
+    -o-transform: rotate(1080deg);
+    -ms-transform: rotate(1080deg);
+    transform: rotate(1080deg);
+  }
 }

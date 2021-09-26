@@ -1,12 +1,26 @@
 import React from "react";
-import "../styles/scss/_profilePicture.scss";
+import "../styles/scss/_roundImage.scss";
 
-const ProfilePicture = ({ image, alt }) => {
+const RoundImage = ({ image, alt, variant, href }) => {
   return (
-    <div className="profile-img-wrapper">
-      <img className="profile-img" src={image} alt={alt} />
+    <div className="round-image-wrapper">
+      {href ? (
+        <a href={href} target="_blank">
+          <img
+            className={`round-image ${variant ? variant : ""}`}
+            src={image}
+            alt={alt}
+          />
+        </a>
+      ) : (
+        <img
+          className={`round-image ${variant ? variant : ""}`}
+          src={image}
+          alt={alt}
+        />
+      )}
     </div>
   );
 };
 
-export default ProfilePicture;
+export default RoundImage;

@@ -1,0 +1,22 @@
+@import "theming.scss";
+
+@mixin roundImage($theme) {
+  .round-image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .round-image {
+    width: 258px;
+    height: 258px;
+    border-radius: 50%;
+    border: 13px solid white;
+    box-shadow: 0px 5px 20px #4646462f;
+    margin-right: 40px;
+    &.small {
+      width: 124px;
+      height: 124px;
+      margin: 0px;
+    }
+  }
+}

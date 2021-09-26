@@ -9,13 +9,19 @@ const Footer = () => {
     <div className="footer-wrapper">
       <div className="footer-link-wrapper">
         <div className="footer-link">
-          <GithubIcon className="footer-github-icon" />
+          <a target="_blank" href="https://github.com/jopms">
+            <GithubIcon className="footer-github-icon" />
+          </a>
         </div>
         <div className="footer-link">
-          <Linkedin className="footer-linkedin-icon" />
+          <a target="_blank" href="https://linkedin.com/in/jopms">
+            <Linkedin className="footer-linkedin-icon" />
+          </a>
         </div>
         <div className="footer-link">
-          <Email className="footer-email-icon" />
+          <a target="_blank" href="mailto:joao.34@hotmail.com">
+            <Email className="footer-email-icon" />
+          </a>
         </div>
       </div>
     </div>
