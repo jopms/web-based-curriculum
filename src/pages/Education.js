@@ -1,5 +1,6 @@
 import React from "react";
 import ProfilePicture from "../components/ProfilePicture";
+import TimeElapsed from "../components/TimeElapsed";
 import Title from "../components/Title";
 import ipl from "../styles/img/ipl.png";
 import freecodecamp from "../styles/img/freecodecamp.png";
@@ -19,7 +20,7 @@ const Education = () => {
           />
           <div className="education-text-description">
             <h1 className="education-title">Instituto Politécnico de Leiria</h1>
-            <h3 className="education-subtitle">Automotive Engineering</h3>
+            <h3 className="education-subtitle">Automotive Engineering <TimeElapsed startDate="2019.08.10"/></h3>
             <p>• Programming in C Language</p>
             <p>• Electronic design automation using Proteus Design Suite</p>
             <p>• Digital Electronics study field</p>
@@ -34,7 +35,7 @@ const Education = () => {
           />
           <div className="education-text-description">
             <h1 className="education-title">freeCodeCamp</h1>
-            <h3 className="education-subtitle">Responsive Web Design</h3>
+            <h3 className="education-subtitle">Responsive Web Design <TimeElapsed startDate="2021.03.01"/></h3>
             <p>• HTML and HTML 5</p>
             <p>• Responsive Web Design Principles</p>
             <p>• CSS flexbox</p>
@@ -50,7 +51,7 @@ const Education = () => {
           />
           <div className="education-text-description">
             <h1 className="education-title">Udemy</h1>
-            <h3 className="education-subtitle">Modern React and Redux</h3>
+            <h3 className="education-subtitle">Modern React and Redux <TimeElapsed startDate="2021.04.18"/></h3>
             <p>• React using Hooks and Classes</p>
             <p>• API Requests / Axios</p>
             <p>• Redux</p>
