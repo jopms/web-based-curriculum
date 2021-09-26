@@ -14,11 +14,11 @@
   }
   .footer-link-wrapper {
     display: flex;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: theme-color($theme, "backgroundColorFooter");
     padding: 20px 0px;
     border-radius: 50px;
     &:hover {
-      background-color: rgba(255, 255, 255, 0.4);
+      background-color: theme-color($theme, "backgroundColorFooterHover");
     }
     transition: background-color 0.5s linear;
   }
@@ -37,13 +37,14 @@
       -webkit-filter: drop-shadow(3px 3px 2px #4646462f);
       filter: drop-shadow(3px 3px 2px #4646462f);
     }
-    
   }
 
   .footer-linkedin-icon {
     width: 32px;
     height: 32px;
     transition: filter 0.2s linear;
+    background: theme-color($theme, "linkedinFillColor");
+    border-radius: 5px;
     &:hover {
       cursor: pointer;
       -webkit-filter: drop-shadow(3px 3px 2px #4646462f);

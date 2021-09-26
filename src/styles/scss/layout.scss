@@ -10,9 +10,10 @@
 @import "_footer.scss";
 @import "_roundImage.scss";
 @import "_title.scss";
+@import "_skillLogo.scss";
 
-@mixin defaultTheme() {
-  .default {
+@mixin lightTheme() {
+  .light {
     @content;
   }
 }
@@ -23,16 +24,17 @@
   }
 }
 
-@include defaultTheme() {
-  @include mainContent("default");
-  @include home("default");
-  @include skills("default");
-  @include experience("default");
-  @include education("default");
-  @include header("default");
-  @include footer("default");
-  @include roundImage("default");
-  @include title("default");
+@include lightTheme() {
+  @include mainContent("light");
+  @include home("light");
+  @include skills("light");
+  @include experience("light");
+  @include education("light");
+  @include header("light");
+  @include footer("light");
+  @include roundImage("light");
+  @include title("light");
+  @include skillLogo("light");
 }
 
 @include darkTheme() {
@@ -45,9 +47,10 @@
   @include footer("dark");
   @include roundImage("dark");
   @include title("dark");
+  @include skillLogo("dark");
 }
 
-body.default {
+body.light {
 }
 
 body.dark {

@@ -5,7 +5,7 @@ const RoundImage = ({ image, alt, variant, href }) => {
   return (
     <div className="round-image-wrapper">
       {href ? (
-        <a href={href} target="_blank">
+        <a href={href} target="_blank" rel="noreferrer">
           <img
             className={`round-image ${variant ? variant : ""}`}
             src={image}

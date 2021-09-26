@@ -9,10 +9,10 @@
     align-items: center;
     position: fixed;
     top: 0;
-    background-color: rgba(255, 255, 255, 0.1);
-    box-shadow: 0px 5px 20px #9b9b9b17;
+    background-color: theme-color($theme, "backgroundColorHeader");
+    box-shadow: 0px 5px 20px theme-color($theme, "boxShadowHeader");
     &:hover {
-      background-color: rgba(255, 255, 255, 0.4);
+      background-color: theme-color($theme, "backgroundColorHeaderHover");
     }
     transition: background-color 0.5s linear;
     z-index: 1;

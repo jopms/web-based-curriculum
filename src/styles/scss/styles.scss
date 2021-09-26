@@ -3,6 +3,6 @@
 @mixin mainContent($theme) {
   .main-content {
     height: 100%;
-    background-image: theme-color($theme, "backgroundColorHome");
+    background-image: theme-color($theme, "backgroundColor");
   }
 }

@@ -1,26 +1,31 @@
-.logo-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+@import "theming.scss";
 
-.skill-logo {
-  height: 75px;
-  transition: 4s;
-  -webkit-transition: 4s;
-  -moz-transition: 4s;
-  -ms-transition: 4s;
-  -o-transition: 4s;
-  &:hover {
+@mixin skillLogo($theme) {
+  .logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skill-logo {
+    height: 75px;
     transition: 4s;
+    filter: drop-shadow(2px 2px 4px theme-color($theme, "skillLogoShadow"));
     -webkit-transition: 4s;
     -moz-transition: 4s;
     -ms-transition: 4s;
     -o-transition: 4s;
-    -webkit-transform: rotate(1080deg);
-    -moz-transform: rotate(1080deg);
-    -o-transform: rotate(1080deg);
-    -ms-transform: rotate(1080deg);
-    transform: rotate(1080deg);
+    &:hover {
+      transition: 4s;
+      -webkit-transition: 4s;
+      -moz-transition: 4s;
+      -ms-transition: 4s;
+      -o-transition: 4s;
+      -webkit-transform: rotate(1080deg);
+      -moz-transform: rotate(1080deg);
+      -o-transform: rotate(1080deg);
+      -ms-transform: rotate(1080deg);
+      transform: rotate(1080deg);
+    }
   }
 }
