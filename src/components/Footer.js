@@ -5,6 +5,11 @@ import { ReactComponent as GithubIcon } from "../styles/img/github.svg";
 import { ReactComponent as Linkedin } from "../styles/img/linkedin.svg";
 import { ReactComponent as Email } from "../styles/img/email.svg";
 
+/*
+ * Contains 3 different links: Github, Linkedin, and a shortcut for email.
+ * Has the DarkModeButton toggle button that changes aplication's theme.
+ */
+
 const Footer = () => {
   return (
     <div className="footer-wrapper">

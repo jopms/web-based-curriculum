@@ -3,6 +3,10 @@ import "../styles/scss/_header.scss";
 import { NavLink } from "react-router-dom";
 import DarkModeButton from "./DarkModeButton";
 
+/*
+ * Contains the links to the different pages
+ */
+
 const Header = () => {
   return (
     <>

@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "../styles/scss/_timeElapsed.scss";
 
+/*
+ * Component that depending on the startDate prop calculates the elapsed time in years, hours and minutes since that time.
+ */
+
 const TimeElapsed = ({ startDate }) => {
   const [timeElapsed, setTimeElapsed] = useState(
     Math.round((new Date().getTime() - new Date(startDate).getTime()) / 1000)

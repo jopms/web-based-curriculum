@@ -9,6 +9,8 @@ import Education from "./Education";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
+/* Handles Routing and darkmode toggle */
+
 const App = () => {
   const dispatch = useDispatch();
   const theme = useSelector((state) => state.theme.value);

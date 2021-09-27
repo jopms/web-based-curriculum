@@ -5,6 +5,11 @@ import "../styles/scss/_darkModeButton.scss";
 import dark from "../styles/img/dark.png";
 import light from "../styles/img/light.png";
 
+/* 
+ * Button that changes redux state "theme" and triggers the change of application's theme (See logic in App.js) 
+ * Saves theme variable in localstorage
+ */
+
 const DarkModeButton = () => {
   const dispatch = useDispatch();
   const theme = useSelector((state) => state.theme.value);
