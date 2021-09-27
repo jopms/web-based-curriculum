@@ -34,4 +34,34 @@
     color: theme-color($theme, "navLinkTextSelected");
     text-shadow: 1px 0 0 theme-color($theme, "navLinkTextSelected");
   }
+
+  @media only screen and (max-width: 900px) {
+    .nav-link {
+      padding: 0px 30px;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .nav-link {
+      padding: 0px 15px;
+      font-size: 1em;
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+    .nav-link {
+      padding: 0px 10px;
+      font-size: 0.8em;
+    }
+  }
+
+  @media only screen and (max-width: 380px) {
+    .nav-link {
+      padding: 0px 10px;
+      font-size: 0.8em;
+    }
+    .nav-wrapper {
+      height: 60px;
+    }
+  }
 }

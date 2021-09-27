@@ -1,27 +1,30 @@
 import React from "react";
 
 import "../styles/scss/_home.scss";
-import ProfilePicture from "../components/ProfilePicture";
+import RoundImage from "../components/RoundImage";
 import profilePicture from "../styles/img/profile.png";
 
 const Home = () => {
   return (
     <div id="home" className="home-wrapper">
-      <ProfilePicture image={profilePicture} alt={"profile picture"} />
+      <RoundImage image={profilePicture} alt={"profile picture"} />
       <div className="home-text-description">
-        <h1>João Santos</h1>
-        <h3>Frontend developer</h3>
-        <p>
-          • Fast-learner and hardworking team player who is comfortable working
-          with JavaScript and React to deliver exceptional customer experiences.
-        </p>
-        <p>
-          • Passionate about exploring new technologies and selfimprovement.
-        </p>
-        <p>
-          • Background in Automotive Engineering and aspiring to combine broad
-          background and discipline to become a Full-Stack developer.
-        </p>
+        <h1 className="home-text-header">João Santos</h1>
+        <h3 className="home-text-subheader">Frontend developer</h3>
+        
+          <p className="home-text-paragraphs">
+            • Fast-learner and hardworking team player who is comfortable
+            working with JavaScript and React to deliver exceptional customer
+            experiences.
+          </p>
+          <p className="home-text-paragraphs">
+            • Passionate about exploring new technologies and selfimprovement.
+          </p>
+          <p className="home-text-paragraphs">
+            • Background in Automotive Engineering and aspiring to combine broad
+            background and discipline to become a Full-Stack developer.
+          </p>
+        
       </div>
     </div>
   );

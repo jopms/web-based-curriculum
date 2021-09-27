@@ -16,4 +16,43 @@
     height: 100%;
     padding-top: 50px;
   }
+
+  @media only screen and (max-width: 900px) {
+    .home-text-paragraphs {
+      font-size: 0.85em;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .experience {
+      display: flex;
+      flex-direction: column;
+    }
+    .experience-text-header {
+      text-align: center;
+    }
+    .experience-text-subheader {
+      text-align: center;
+    }
+    .experience-text-paragraphs {
+      text-align: center;
+    }
+  }
+
+  @media only screen and (max-width: 420px) {
+    .experience {
+      padding: 20px 0px;
+    }
+
+    .experience-wrapper {
+      margin-top: 70px;
+    }
+
+    .round-image-experience {
+      height: 90px !important;
+      width: 90px !important;
+    }
+    
+    
+  }
 }

@@ -18,7 +18,7 @@
 
   .education-field-wrapper {
     max-width: 20%;
-    padding-top: 90px
+    padding-top: 90px;
   }
   .education-title {
     text-align: center;
@@ -26,5 +26,38 @@
   }
   .education-subtitle {
     text-align: center;
+  }
+
+  @media only screen and (max-width: 830px) {
+    .education {
+      flex-direction: column;
+      align-items: center;
+    }
+    .education-field-wrapper {
+      max-width: 100%;
+    }
+
+    .education-wrapper {
+      background-image: theme-color($theme, "backgroundColor");
+    }
+    .education {
+      padding-bottom: 80px;
+    }
+  }
+
+  @media only screen and (max-width: 420px) {
+    .education-text-description {
+      padding: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 380px) {
+    .education-wrapper {
+      margin-top: 60px;
+      padding-top: 20px;
+    }
+    .education-field-wrapper {
+      padding-top: 30px;
+    }
   }
 }

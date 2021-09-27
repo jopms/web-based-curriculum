@@ -6,10 +6,32 @@
     display: flex;
     justify-content: center;
     align-items: center;
-   
+
     color: theme-color($theme, "textColor");
   }
   .home-text-description {
     max-width: 500px;
+  }
+
+  @media only screen and (max-width: 900px) {
+    .home-text-paragraphs {
+      font-size: 0.85em;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .home-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+    .home-text-header {
+      text-align: center;
+    }
+    .home-text-subheader {
+      text-align: center;
+    }
+    .home-text-paragraphs {
+      text-align: center;
+    }
   }
 }

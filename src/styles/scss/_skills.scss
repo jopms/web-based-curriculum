@@ -1,15 +1,6 @@
 @import "theming.scss";
 
 @mixin skills($theme) {
-  .skills-header-text{
-    text-align: center;
-    font-family: "Press Start 2P", cursive;
-    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.9);
-    font-size: 32px;
-    padding-bottom: 0px;
-    padding-top: 50px;
-    color: #99d98c;
-  }
   .skills-page-wrapper {
     display: flex;
     height: 100%;
@@ -23,5 +14,16 @@
     height: 100%;
     grid-template-columns: auto auto auto auto auto;
     color: theme-color($theme, "textColor");
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .skills-wrapper {
+    }
+  }
+
+  @media only screen and (max-width: 420px) {
+    .skills-wrapper {
+      grid-template-columns: auto auto auto;
+    }
   }
 }
