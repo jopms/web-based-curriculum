@@ -20,13 +20,14 @@ const App = () => {
 
   useEffect(() => {
     const main = document.getElementById("main");
-
-    if (main.className.includes(theme)) {
-      return;
-    } else {
-      main.className.includes("light")
-        ? toggleDarkMode(main, "light", "dark")
-        : toggleDarkMode(main, "dark", "light");
+    if (localStorage.getItem("theme")) {
+      if (main.className.includes(theme)) {
+        return;
+      } else {
+        main.className.includes("light")
+          ? toggleDarkMode(main, "light", "dark")
+          : toggleDarkMode(main, "dark", "light");
+      }
     }
   }, [theme]);
 
